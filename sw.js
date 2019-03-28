@@ -12,6 +12,7 @@ const appAssets = [
     'vendor/jquery.min.js'
 ];  
 
+
 // SW Install
 self.addEventListener('install', (e) => {
     e.waitUntil(

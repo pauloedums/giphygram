@@ -60,7 +60,8 @@ function update() {
                 );
             });
 
-            console.log(latestGiphys);
+            // Inform the SW (if available) of current Giphys
+            if(navigator.serviceWorker) giphyCacheClean(latestGiphys);
         })
 
         // Failure
