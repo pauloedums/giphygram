@@ -7,6 +7,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=0, user-scalable=0">
 
+        <meta name="description" content="Progressive Web App for displaying the latest trendind Gifs from Giphy.com">
+
         <meta name="apple-mobile-web-app-title" content="Giphygram">
         <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -38,21 +40,9 @@
         <meta name="msapplication-square310x310logo" content="images/icons/mstile-310x310.png">
 
         <link rel="stylesheet" href="vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
         <script defer src="vendor/jquery.min.js"></script>
         <script defer src="main.js"></script>
-
-        <style>
-            .spinner {
-                animation-name: spin;
-                animation-duration: 2000ms;
-                animation-iteration-count: infinite; 
-                animation-timing-function: linear;
-            }
-            @keyframes spin {
-                from { transform:rotate(0deg); }
-                to {transform:rotate(360deg); }
-            }
-        </style>
 
     </head>
 
@@ -61,11 +51,11 @@
         <!-- Nav Header -->
         <header class="navbar sticky-top navbar-expand bg-primary navbar-dark">
             <!-- Logo -->
-            <img src="images/logo.png" alt="Giphygram" width="60" class="img-fluid navbar-brand">
+            <img src="images/logo.png" alt="Giphygram" class="img-fluid navbar-brand">
 
             <div id="update" class="ml-auto">
-                <a class="icon" href="#update"><img width="25" src="images/flame.png"></a>
-                <img class="icon d-none spinner" width="20" src="images/sync.png">
+                <a class="icon" href="#update"><img src="images/flame.png"></a>
+                <img class="icon d-none spinner" src="images/sync.png">
             </div>
 
         </header>
